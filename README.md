@@ -47,7 +47,7 @@ The EDA conducted in this project includes:
 ---
 
 ## Tools & Libraries Used
-- Python 3.x  
+- Python 
 - Jupyter Notebook  
 - Pandas & NumPy for data manipulation  
 - Matplotlib & Seaborn for visualizations  
