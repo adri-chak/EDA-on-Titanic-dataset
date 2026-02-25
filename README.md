@@ -1,69 +1,63 @@
-# Titanic Dataset EDA 🛳️
+# 🚢 Titanic Survival Prediction - EDA & Machine Learning
 
-## Overview
-This repository showcases **Exploratory Data Analysis (EDA)** on the Titanic dataset. The main goal is to analyze passenger data, uncover patterns, visualize insights, and identify factors that influenced survival rates during the Titanic disaster.
+## 📊 Project Overview
+This project performs Exploratory Data Analysis (EDA) and builds a predictive model to determine which passengers survived the Titanic disaster.
 
----
-
-## Dataset
-The dataset is the famous Titanic dataset from Kaggle, which contains information about the passengers, including:
-- Passenger demographics (Age, Sex, Class)
-- Ticket information (Fare, Embarked)
-- Survival status (Survived / Did not survive)
-
-**Source:** [Kaggle Titanic Dataset](https://www.kaggle.com/c/titanic/data)
+Dataset used: Titanic dataset (Kaggle)
 
 ---
 
-## Analyses Performed
-The EDA conducted in this project includes:
+## 🔍 Steps Performed
 
-1. **Data Cleaning**
-   - Handling missing values in Age, Cabin, Embarked, etc.
-   - Converting categorical data for analysis
+### 1️⃣ Data Cleaning
+- Removed irrelevant columns (PassengerId, Name, Ticket)
+- Filled missing Age values using median
+- Filled missing Embarked values using mode
+- Dropped Cabin due to excessive missing data
 
-2. **Univariate Analysis**
-   - Distribution of Age, Fare, and other numeric features
-   - Count plots for categorical features
+### 2️⃣ Exploratory Data Analysis (EDA)
+- Visualized Age and Fare distributions
+- Analyzed survival patterns by Gender and Passenger Class
+- Correlation heatmap analysis
+- Identified key survival factors
 
-3. **Bivariate Analysis**
-   - Survival rate by Gender, Passenger Class, and Embarked Port
-   - Correlation analysis between features and survival
-
-4. **Feature Engineering**
-   - Creating new features such as Family Size
-   - Encoding categorical variables for insights
-
-5. **Visualizations**
-   - Histograms, boxplots, and count plots
-   - Heatmaps for correlation
-   - Survival trends across different categories
-
-6. **Key Insights**
-   - Women had a higher survival rate than men
-   - Passengers in 1st class had better survival chances
-   - Age, family size, and port of embarkation influenced survival
+### 3️⃣ Feature Engineering
+- Created FamilySize feature
+- Encoded categorical variables
+- Removed multicollinearity features
 
 ---
 
-## Tools & Libraries Used
-- Python 
-- Jupyter Notebook  
-- Pandas & NumPy for data manipulation  
-- Matplotlib & Seaborn for visualizations  
+## 🤖 Machine Learning Models Used
+
+### Logistic Regression
+Accuracy: 80.44%
+
+### Random Forest
+Accuracy: 81.56%
+
+Cross-validation score: 78.9%
 
 ---
 
-## How to Run
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/adri-chak/EDA-on-Titanic-dataset.git
-2. Open the .ipynb notebooks in Jupyter Notebook or Jupyter Lab.
-3. Run the notebooks to see analyses and visualizations.
+## 📈 Key Findings
 
-## Notebooks
+- Gender (Sex) is one of the strongest predictors of survival.
+- Fare and Passenger Class significantly influence survival.
+- Random Forest slightly outperformed Logistic Regression.
+- Survival prediction is feasible with basic feature engineering.
 
-Titanic_EDA.ipynb – Complete notebook containing data cleaning, analysis, visualizations, and insights.
+---
 
-Author
-Adrija Chakraborty
+## 🛠 Tools & Libraries
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+
+---
+
+## 📌 Conclusion
+This project demonstrates end-to-end data science workflow including data cleaning, EDA, feature engineering, model building, and evaluation.
