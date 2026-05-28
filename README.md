@@ -10,7 +10,7 @@ Dataset used: Titanic dataset (Kaggle)
 ## 🔍 Steps Performed
 
 ### 1️. Data Cleaning
-- Removed irrelevant columns (PassengerId, Name, Ticket)
+- Removed irrelevant columns (PassengerId, Name, Ticket) 
 - Filled missing Age values using median
 - Filled missing Embarked values using mode
 - Dropped Cabin due to excessive missing data
