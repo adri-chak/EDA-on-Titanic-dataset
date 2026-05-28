@@ -21,7 +21,7 @@ Dataset used: Titanic dataset (Kaggle)
 - Correlation heatmap analysis
 - Identified key survival factors
 
-### 3️⃣ Feature Engineering
+### 3️. Feature Engineering
 - Created FamilySize feature
 - Encoded categorical variables
 - Removed multicollinearity features
