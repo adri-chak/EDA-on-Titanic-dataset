@@ -15,7 +15,7 @@ Dataset used: Titanic dataset (Kaggle)
 - Filled missing Embarked values using mode
 - Dropped Cabin due to excessive missing data
 
-### 2️⃣ Exploratory Data Analysis (EDA)
+### 2️. Exploratory Data Analysis (EDA)
 - Visualized Age and Fare distributions
 - Analyzed survival patterns by Gender and Passenger Class
 - Correlation heatmap analysis
